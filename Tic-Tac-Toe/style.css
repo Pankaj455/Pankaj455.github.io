@@ -14,7 +14,7 @@ body{
     text-align: center;
     padding: 10px;
     font-style: italic;
-    text-shadow: 0 0 20px #bfcdd6b7;
+    text-shadow: 0 0 25px rgb(197, 227, 235);
     position: relative;
 }
 
@@ -86,7 +86,7 @@ body{
     font-size: 50px;
     display: grid;
     place-items: center;
-    text-shadow: 0 0 20px #bfcdd6b7;
+    text-shadow: 0 0 15px #bfcdd6dc;
 }
 
 .status{
