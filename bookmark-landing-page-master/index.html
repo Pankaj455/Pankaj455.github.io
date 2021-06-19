@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="logo">
+      <div class="icon"> <i class="fas fa-bookmark"></i> </div>
+      <h3>BOOKMARK</h3>
+    </div>
+    <nav>
+      <ul>
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li><button>Login</button></li>
+        <div class="social-media">
+          <a href=""><img src="./images/icon-facebook.svg" alt=""></a>
+          <a href=""><img src="./images/icon-twitter.svg" alt=""></a>
+        </div>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <img src="./images/icon-hamburger.svg" alt="">
+    </div>
+  </header>
+  <main>
+    <section class="hero margin-top">
+      <div class="text-part container text-center">
+        <h1 class="bg-text text-lt-black font-wt1">A Simple Bookmark Manager</h1>
+        <p class="text-lt line-ht">A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="browser-op">
+          <button>Get it on Chrome</button>
+          <button>Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="img-part">
+        <img src="./images/illustration-hero.svg" alt="">
+      </div>
+    </section>
+
+    <section class="features text-center margin-top2">
+      <div class="heading container">
+        <h1 class="text-lt-black font-wt1">Features</h1>
+        <p class="text-lt line-ht">Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="tabs">
+        <div class="text-lt-black active">Simple Bookmarking</div>
+        <div class="text-lt-black">Speedy Searching</div>
+        <div class="text-lt-black">Easy Sharing</div>
+      </div>
+      <div class="about-tabs">
+        <div class="img-desc">
+          <img src="./images/illustration-features-tab-1.svg" alt="">
+        </div>
+        <div class="text-desc container">
+          <h1 class="text-lt-black font-wt1 margin-bottom2">Bookmark in one click</h1>
+          <p class="text-lt line-ht margin-bottom1">Organize your bookmarks however you like. Our simple drag-and-drop
+            interface
+            gives you complete control over how you manage your favourite sites.</p>
+          <button class="more">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="extensions container margin-top2">
+      <div class="heading text-center">
+        <h1 class="font-wt1 text-lt-black">Download the extension</h1>
+        <p class="text-lt line-ht">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+      <div class="card-container">
+        <div class="cards">
+          <div class="browser-logo margin-bottom1">
+            <img src="./images/logo-chrome.svg" alt="">
+          </div>
+          <h3 class="font-wt1 text-lt-black font-size1 margin-bottom3">Add to Chrome</h3>
+          <h3 class="clr-grayish-blue font-wt2 font-size2 margin-bottom1">Minimum version 62</h3>
+          <div class="dotted-img">
+            <img src="./images/bg-dots.svg" alt="">
+          </div>
+          <button class="margin-top install">Add & Install Extension</button>
+        </div>
+
+
+        <div class="cards">
+          <div class="browser-logo margin-bottom1">
+            <img src="./images/logo-firefox.svg" alt="">
+          </div>
+          <h3 class="font-wt1 text-lt-black font-size1 margin-bottom3">Add to Firefox</h3>
+          <h3 class="clr-grayish-blue font-wt2 font-size2 margin-bottom1">Minimum version 55</h3>
+          <div class="dotted-img">
+            <img src="./images/bg-dots.svg" alt="">
+          </div>
+          <button class="margin-top install">Add & Install Extension</button>
+        </div>
+
+
+        <div class="cards">
+          <div class="browser-logo margin-bottom1">
+            <img src="./images/logo-opera.svg" alt="">
+          </div>
+          <h3 class="font-wt1 text-lt-black font-size1 margin-bottom3">Add to Opera</h3>
+          <h3 class="clr-grayish-blue font-wt2 font-size2 margin-bottom1">Minimum version 46</h3>
+          <div class="dotted-img">
+            <img src="./images/bg-dots.svg" alt="">
+          </div>
+          <button class="margin-top install">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq container margin-top2">
+      <div class="heading">
+        <h1 class="font-wt1 text-lt-black text-center margin-bottom1">Frequently Asked Questions</h1>
+        <p class="text-lt line-ht text-center">Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
+      </div>
+      <div class="question-bank">
+        <ul class="questions">
+          <li>
+            <div class="question margin-top">
+              <h3 class="font-wt2">What is Bookmark?</h3>
+            </div>
+            <div class="answer">
+              <p class="text-lt line-ht">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+          </li>
+          <li>
+            <div class="question margin-top">
+              <h3 class="font-wt2">How can I request a new browser?</h3>
+            </div>
+            <div class="answer">
+              <p class="text-lt line-ht">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
+                non ligula.
+                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="question margin-top">
+              <h3 class="font-wt2">Is there a mobile app?</h3>
+            </div>
+            <div class="answer">
+              <p class="text-lt line-ht">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+                dolor, ut condimentum
+                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                sollicitudin ex et ultricies bibendum.</p>
+            </div>
+          </li>
+          <li>
+            <div class="question margin-top">
+              <h3 class="font-wt2">What about other Chromium browsers?</h3>
+            </div>
+            <div class="answer">
+              <p class="text-lt line-ht">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
+                euismod dui. Aliquam
+                vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="more">More Info</button>
+      </div>
+
+    </section>
+
+    <section class="contact margin-top2 text-center">
+      <div>
+        <h3 class="font-wt2 margin-bottom2 font-size2">35,000+ already joined</h3>
+        <h1 class="font-wt1 margin-bottom2">Stay up-to-date with what we’re doing</h1>
+        <form action="#">
+          <input type="text" placeholder="Enter your email address">
+          <button id="submit">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="navigation margin-bottom1">
+      <div class="logo margin-bottom2">
+        <!-- <img src="./images/logo-bookmark.svg" alt=""> -->
+        <div class="icon"> <i class="fas fa-bookmark"></i> </div>
+        <h3>BOOKMARK</h3>
+      </div>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+      <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
