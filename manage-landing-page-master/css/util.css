@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+:root{
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --font-wt1: 700;
+    --font-wt2: 500;
+    --font-wt3: 400;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;  padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.shadow-around{
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+button{
+    font-size: 14px;
+    font-weight: var(--font-wt1);
+    outline: none;
+    border: none;
+    background-color: var(--bright-red);
+    border-radius: 30px;
+    color: var(--very-light-gray);
+    padding: 12px 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background-color:hsla(12, 88%, 59%, 0.85);
+}
+
+p{
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+    opacity: 0.8;
+}
+
+.selected{
+    background-color: var(--bright-red);
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+
+@media (min-width: 576px)
+{
+    .container{
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+

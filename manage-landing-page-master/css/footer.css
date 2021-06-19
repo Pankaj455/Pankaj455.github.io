@@ -1,0 +1,154 @@
+.footer{
+    padding-top: 50px;
+    background-color: var(--very-dark-blue);
+}
+.footer .container{
+    /* border: 3px solid white; */
+    position: relative;
+}
+.contact{
+    /* border: 2px solid blue; */
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contact input{
+    font-size: 14px;
+    /* font-weight: var(--font-wt1); */
+    padding: 16px;
+    border-radius: 30px;
+    color: var(--dark-grayish-blue);
+    width: 75%;
+    outline: none;
+    border: none;
+}
+
+::placeholder{
+    color: var(--dark-grayish-blue);
+}
+
+.contact button{
+    margin-left: 10px;
+    padding: 13px;
+    min-width: 25%;
+}
+
+.links{
+    /* border: 2px solid white; */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.col li{
+    list-style: none;
+    padding: 0 0 8px 0;
+}
+.col li a{
+    font-size: 13px;
+    font-weight: var(--font-wt2);
+    color: #d1cfcf;
+}
+.col li a:hover{
+    color: var(--bright-red);
+}
+.social-media{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    /* border: 2px solid wheat; */
+}
+.social-media a i{
+    font-size: 25px;
+    color: var(--very-light-gray);
+}
+
+.social-media a:hover i{
+    color: var(--bright-red);
+}
+
+.social-media + .logo{
+    margin-bottom: 50px;
+}
+
+.footer .container span{
+    font-size: 13px;
+    color: #d1cfcf85;
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+    /* border: 2px solid white; */
+}
+
+
+@media (min-width: 992px){
+    .footer .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+  
+    .contact{
+        width: 30%;
+        order: 3;
+    }
+
+    .contact > *{
+        align-self: flex-start;
+    }
+    .contact input{
+        padding: 12px;
+    }
+    .links{
+        width: 40%;
+        padding: 0 30px;
+        order: 2;
+    }
+
+    .col li{
+        padding: 4px;
+    }
+
+    .logo-social{
+        width: 30%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media{
+        order: 2;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .social-media a{
+        margin-right: 15px;
+    }
+    .logo-social .logo{
+        order: 1;
+        text-align: start;
+    }
+
+    .footer .container span{
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        text-align: end;
+    }
+    
+}
+
+@media (min-width){
+    .social-media{
+        justify-content: center;
+    }
+}
+
+

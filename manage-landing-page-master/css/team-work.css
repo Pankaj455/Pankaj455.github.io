@@ -1,0 +1,75 @@
+.simplify{
+    position: relative;
+    padding: 100px 40px;
+    background-color: var(--bright-red);
+    color: var(--very-light-gray);
+}
+
+.simplify::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 122px;
+    left: 0;
+    top: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.simplify .heading{
+    margin-bottom: 35px;
+}
+
+.simplify .heading h1{
+    font-size: 50px;
+}
+.simplify button{
+    background-color: var(--very-light-gray);
+    color: var(--bright-red);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.simplify button:hover{
+    color: hsla(12, 88%, 59%, 0.55);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 992px){
+    .simplify{
+        padding: 50px 0;
+    }
+    .simplify::before{
+        background-image: url('../images/bg-simplify-section-desktop.svg');
+        background-size: cover;
+        top: 0;
+    }
+    .simplify .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .simplify .heading{
+        max-width: 45%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .simplify .heading h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 300px){
+    .simplify .heading h1{
+        font-size: 35px;
+    }
+
+    .simplify button{
+        font-size: 12px;
+        padding: 0.8em 1.3em;
+    }
+}

@@ -1,0 +1,124 @@
+.get-started{
+    display: none;
+}
+
+.header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-menu
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
+    /* border: 2px solid black; */
+    border-radius: 6px;
+    background-color: #faf2f2;
+    z-index: 50;
+    display: none;
+}
+
+.navigation-menu ul{
+    margin: 40px auto;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.navigation-menu ul li{
+    list-style: none;
+    padding: 15px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+label span{
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    margin: 2px;
+    background-color: #272020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.header input{ display: none; }
+
+.header input:checked ~ .navigation-menu{
+    display: block;
+}
+
+.header input:checked ~ label span:nth-child(2){
+    visibility: hidden;
+}
+.header input:checked ~ label span:nth-child(1){
+    transform: rotate(45deg) translateY(10px);
+}
+.header input:checked ~ label span:nth-child(3){
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+.logo{
+    position: relative;
+    top: 3px;
+}
+
+@media (min-width: 992px){
+    .header{
+        padding: 20px 0;
+    }
+    .navigation-menu{
+        width: 60%;
+        height: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        z-index: 0;
+        background-color: #fff;
+    }
+
+    .navigation-menu ul li{
+        margin: 0;
+    }
+
+    .navigation-menu ul li{
+        padding: 0 15px;
+    }
+    .navigation-menu ul li a{
+        font-size: 13px;
+        color: var(--dark-grayish-blue);
+        font-weight: 700;
+    }
+    .navigation-menu ul li a:hover{
+        color: var(--bright-red);
+    }
+
+    label span{
+        display: none;
+    }
+
+    .navigation-menu ul li{
+        display: inline-block;
+    }
+    .get-started{
+        display: block;
+    }
+}
