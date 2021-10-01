@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{My Team Page}</h1>
+<h1 align="center">My Team Page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://pankaj455.github.io/my-team-page/index.html">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/pankaj455/pankaj455.github.io/tree/main/my-team-page">
       Solution
     </a>
     <span> | </span>
@@ -34,7 +34,9 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/Pankaj455/pankaj455.github.io/blob/main/my-team-page/screenshots/Screenshot-upper-half.png)
+
+![screenshot](https://github.com/Pankaj455/pankaj455.github.io/blob/main/my-team-page/screenshots/Screenshot-lower-half.png)
 
 ### Built With
 
@@ -43,4 +45,4 @@
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/pankaj455)
+- GitHub [@pankaj455](https://github.com/pankaj455)
