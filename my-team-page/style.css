@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Montserrat:wght@500&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.wrapper{
+    max-width: 1440px;
+    padding: 3.125em 10em 0 10em;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6em;
+}
+
+header > * {
+    flex: 1 1 300px;
+}
+
+h1{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -0.045em;
+    margin-bottom: 0.27em;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 40ch;
+}
+
+.profiles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin-bottom: 9em;
+}
+
+.profiles > *{
+    position: relative;
+}
+
+.profiles > *:nth-child(3n+2)::before{
+    content: '';
+    position: relative;
+    display: block;
+    height: 120px;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+span{
+    font-family: 'PT-Serif', serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -7px;
+    left: 105%;
+    transform: rotate(90deg);
+    transform-origin: left;
+    white-space: nowrap;
+}
+
+.profiles > *:nth-child(3n+2) span{
+    top: 115px;
+}
+
+
+footer{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 1.7em;
+    color: #A9A9A9;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #A9A9A9;
+}
+a:hover{
+    text-decoration: underline;
+    color: #9c9696;
+}
+
+
+@media (max-width: 992px){
+    .profiles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profiles > *:nth-child(3n+2)::before{
+        height: 0;
+    }
+
+    .profiles > *:nth-child(2n)::before{
+        content: '';
+        display: block;
+        height: 120px;
+    }
+
+    .profiles > *:nth-child(3n+2) span
+    {
+        top: -7px;
+    }
+
+    .profiles > *:nth-child(2n) span{
+        top: 115px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        padding: 3.125em 2em 0 2em;
+    }
+    header{
+        flex-direction: column;
+    }
+    header > * {
+        flex-basis: 0;
+    }
+
+}
+
+@media (max-width: 576px){
+    .wrapper{
+        padding: 3.125em 2em 0 2em;
+    }
+
+    .profiles > *:nth-child(2n)::before
+    {
+        height: 60px;
+    }
+    .profiles > *:nth-child(2n) span{
+        top: 55px;
+    }
+}
+
+
+
