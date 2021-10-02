@@ -17,6 +17,8 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px 76px 0 76px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .show{
@@ -215,9 +217,6 @@ nav.show + .burger .line3{
 }
 
 @media (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
     header a{
         font-weight: 700;
     }
@@ -257,6 +256,10 @@ nav.show + .burger .line3{
     }
     section{
         margin-bottom: 60px;
+    }
+    .designer{
+        width: 75%;
+        left: 15%;
     }
     h4{
         font-size: 12px;
