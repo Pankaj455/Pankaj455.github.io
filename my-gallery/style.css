@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 2em 1.5em 0 1.5em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+
+h1, h4, p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+h1{
+    font-size: 14px;
+    line-height: 1.21em;
+    text-align: center;
+    color: #4E5150;
+    margin-bottom: .28em;
+}
+
+h4{
+    font-size: 14px;
+    line-height: 1.25em;
+    color: #4E5150;
+    margin-bottom: 0.06em;
+}
+
+header{ margin-bottom: 2.5em; }
+
+.address{
+    font-size: 10px;
+    line-height: 1.2em;
+    color: #A9A9A9;
+    margin-bottom: 1.2em;
+}
+
+.profile{
+    text-align: center;
+    margin-bottom: 0.68em;
+}
+
+.profile img{ max-width: 100px; }
+
+.more-info{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 0.625em;
+    margin: 0 auto;
+}
+
+.block{
+    flex-grow: 1;
+    flex-basis: 95px;
+    background: #E5E5E5;
+    border-radius: 0.75em;
+    padding: 0.625em;
+}
+
+.block p{
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #BDBDBD;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.8em;
+    margin-bottom: 2.75em;
+}
+
+.gallery img{ width: 100%; }
+
+.photos:nth-child(2){
+    grid-column: 2 / span 2;
+}
+.photos:nth-child(3){
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+.photos:nth-child(4){
+    grid-row: 2 / span 2;
+}
+.photos:nth-child(5){
+    grid-column: 2 / span 1;
+}
+.photos:nth-child(6){
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+footer{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 1.7em;
+    color: #A9A9A9;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #A9A9A9;
+}
+a:hover{
+    text-decoration: underline;
+    color: #9c9696;
+}
+
+@media (min-width: 576px){
+    body{ padding: 2em 4em 0 4em; }
+}
+@media (min-width: 768px){
+    body{ padding: 5em 7em 0 7em; }
+    header{ margin-bottom: 4em; }
+    h1{ font-size: 24px; }
+    h4{ font-size: 18px; }
+    .address{ font-size: 14px; }
+    .profile{ margin-bottom: 1.7em; }
+    .profile img{ max-width: 156px; }
+    .block p{ font-size: 14px; }
+
+    .gallery{
+        gap: 1em;
+        margin-bottom: 8em;
+    }
+
+}
+
+@media (min-width: 992px){
+    body{ padding: 5em 8em 0 8em; }
+}
+@media (min-width: 1245px){
+    body{ padding: 5em 12em 0 12em; }
+}
