@@ -80,7 +80,7 @@ li{
 section{
     display: flex;
     flex-direction: column;
-    margin: 1.5em 0 1.875em 0;
+    margin: 3em 0 1.875em 0;
 }
 
 .features{
